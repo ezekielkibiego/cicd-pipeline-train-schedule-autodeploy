@@ -9,7 +9,7 @@ spec:
     track: canary
   ports:
   - protocol: TCP
-    port: 8080
+    port: 30000
     nodePort: 30000
 
 ---
@@ -40,7 +40,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 8080
+            port: 30000
           initialDelaySeconds: 15
           timeoutSeconds: 1
           periodSeconds: 10
