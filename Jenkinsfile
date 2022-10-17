@@ -126,7 +126,7 @@ pipeline {
 
                     def response = httpRequest ( 
 
-                        url: "http://$KUBE_MASTER_IP:30000/", 
+                        url: "http://$KUBE_MASTER_IP:3000/", 
 
                         timeout: 30 
 
