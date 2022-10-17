@@ -4,9 +4,9 @@ pipeline {
 
     environment { 
 
-        //be sure to replace "willbla" with your own Docker Hub username 
+        
 
-        DOCKER_IMAGE_NAME = "willbla/train-schedule" 
+        DOCKER_IMAGE_NAME = "kibiego/train-schedule" 
 
         CANARY_REPLICAS = 0 
 
@@ -126,7 +126,7 @@ pipeline {
 
                     def response = httpRequest ( 
 
-                        url: "http://$KUBE_MASTER_IP:8081/", 
+                        url: "http://$KUBE_MASTER_IP:30000/", 
 
                         timeout: 30 
 
